@@ -51,7 +51,7 @@ class tx_imagecycle_pi1_wizicon
 	{
 		$LL = $this->includeLocalLang();
 		$wizardItems['plugins_tx_imagecycle_pi1'] = array(
-			'icon' => ExtensionManagementUtility::extRelPath('imagecycle').'pi1/ce_wiz.gif',
+			'iconIdentifier' => 'content-carousel-image',
 			'title' => $GLOBALS['LANG']->getLLL('pi1_title', $LL),
 			'description' => $GLOBALS['LANG']->getLLL('pi1_plus_wiz_description', $LL),
 			'params' => '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=imagecycle_pi1'
