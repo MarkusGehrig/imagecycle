@@ -49,28 +49,15 @@ class tx_imagecycle_pi2_wizicon
 	 */
 	function proc($wizardItems)
 	{
-		$LL = $this->includeLocalLang();
 		$wizardItems['plugins_tx_imagecycle_pi2'] = array(
 			'iconIdentifier' => 'content-carousel-image',
-			'title' => $GLOBALS['LANG']->getLLL('pi2_title', $LL),
-			'description' => $GLOBALS['LANG']->getLLL('pi2_plus_wiz_description', $LL),
+			'title' => $GLOBALS['LANG']->sL('LLL:EXT:imagecycle/locallang.xml:pi2_title'),
+			//'title' => $GLOBALS['LANG']->getLLL('pi2_title', $LL),
+			'description' => $GLOBALS['LANG']->sL('LLL:EXT:imagecycle/locallang.xml:pi2_plus_wiz_description'),
+			//'description' => $GLOBALS['LANG']->getLLL('pi2_plus_wiz_description', $LL),
 			'params' => '&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=imagecycle_pi2'
 		);
 
 		return $wizardItems;
-	}
-
-	/**
-	 * Reads the [extDir]/locallang.xml and returns the $LOCAL_LANG array found in that file.
-	 *
-	 * @return	The array with language labels
-	 */
-	function includeLocalLang()
-	{
-		$llFile = ExtensionManagementUtility::extPath('imagecycle').'locallang.xml';
-		/** @var $llxmlParser LocallangXmlParser */
-		$llxmlParser = GeneralUtility::makeInstance(LocallangXmlParser::class);
-		$LOCAL_LANG = $llxmlParser->getParsedData($llFile, $GLOBALS['LANG']->lang);
-		return $LOCAL_LANG;
 	}
 }
