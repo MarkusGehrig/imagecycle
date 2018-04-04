@@ -33,38 +33,67 @@ $GLOBALS['TCA']['tt_content']['palettes']['tx_imagecycle'] = array(
 
 
 // ICON pi1
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array(
-    'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi1', 'imagecycle_pi1',
-    $relativeExtensionPath . 'pi1/ce_icon.gif'
-), 'list_type', 'imagecycle');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+    array(
+        'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi1', 
+        'imagecycle_pi1',
+        'EXT:imagecycle/pi1/ce_icon.gif'
+    ),  
+    'list_type', 
+    'imagecycle'
+);
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue('imagecycle_pi1', 'FILE:EXT:imagecycle/pi1/flexform_ds.xml');
 
 // ICON pi2
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array(
-    'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi2', 'imagecycle_pi2',
-    $relativeExtensionPath . 'pi2/ce_icon.gif'
-) ,'list_type', 'imagecycle');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+    array(
+        'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi2', 
+        'imagecycle_pi2',
+        'EXT:imagecycle/pi2/ce_icon.gif'
+    ),
+    'list_type', 
+    'imagecycle'
+);
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue('imagecycle'.'_pi2', 'FILE:EXT:imagecycle/pi2/flexform_ds.xml');
 
 // ICON pi3
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array(
-    'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi3', 'imagecycle_pi3',
-    $relativeExtensionPath . 'pi3/ce_icon.gif'
-) ,'list_type', 'imagecycle');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+    array(
+        'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi3', 
+        'imagecycle_pi3',
+        'EXT:imagecycle/pi3/ce_icon.gif'
+    ) ,
+    'list_type', 
+    'imagecycle'
+);
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue('imagecycle_pi3', 'FILE:EXT:imagecycle/pi3/flexform_ds.xml');
 
 // ICON pi4
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array(
-    'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi4', 'imagecycle_pi4',
-    $relativeExtensionPath . 'pi4/ce_icon.gif'
-) ,'list_type', 'imagecycle');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+    array(
+        'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi4', 'imagecycle_pi4',
+        'EXT:imagecycle/pi4/ce_icon.gif'
+    ),
+    'list_type', 
+    'imagecycle'
+);
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue('imagecycle_pi4', 'FILE:EXT:imagecycle/pi4/flexform_ds.xml');
 
 // ICON pi5
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(array(
-    'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi5', 'imagecycle_pi5',
-    $relativeExtensionPath . 'pi5/ce_icon.gif'
-) ,'list_type', 'imagecycle');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+    array(
+        'LLL:EXT:imagecycle/locallang_db.xml:tt_content.list_type_pi5', 
+        'imagecycle_pi5',
+        'EXT:imagecycle/pi5/ce_icon.gif'
+    ) ,
+    'list_type', 
+    'imagecycle'
+);
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue('imagecycle_pi5', 'FILE:EXT:imagecycle/pi5/flexform_ds.xml');
 
 
