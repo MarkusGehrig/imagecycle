@@ -49,7 +49,7 @@ class tx_imagecycle_pi5_wizicon
 	 */
 	function proc($wizardItems)
 	{
-		$LL = $this->includeLocalLang();
+		
 		$wizardItems['plugins_tx_imagecycle_pi5'] = array(
 			'iconIdentifier' => 'content-carousel-image',
 			'title' => $GLOBALS['LANG']->sL('LLL:EXT:imagecycle/locallang.xml:pi5_title'),
